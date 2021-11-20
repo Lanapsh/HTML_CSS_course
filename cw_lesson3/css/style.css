@@ -1,0 +1,130 @@
+.conteiner{
+    width: 1060px; 
+    background-color: #ffffff; 
+    margin: 0 auto; 
+    border-left: 1px solid #dadada; 
+    border-right: 1px solid #dadada; 
+    padding: 50px 45px; 
+    box-sizing: border-box;
+    
+}
+.header {
+    display: block;
+    margin-bottom: 40px;
+}
+.header > a{
+    display:block;
+    margin-bottom: 40px;
+    
+}
+.header-menu{
+    overflow: auto;
+    background: #5d5d5d;
+}
+.header-menu li{
+    float: left;
+    padding: 15px 50px;
+    list-style-type: none;
+    border-right: 1px solid #dadada;
+}
+.header-menu a{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; 
+}
+
+.header ul li:hover {
+    
+    background-color: #f10909;
+}
+.content {
+    width: 965px;
+    padding: 0 0 63px;
+}
+.left-menu {
+    float: left;
+    list-style: none;
+    background-color: #ffffff;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #c8c8c8;
+}
+
+.left-menu li {
+    float: none;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #c7c7c7;
+    position: relative;
+    margin: auto;
+    padding: 15px;
+    padding-right: 150px;
+}
+
+.left-menu a {
+    color: #656363;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+.left-menu li a:hover {
+    color: #f10909;
+}
+
+.content-block {
+    box-sizing: border-box;
+    float: right;
+    width: 677px;    
+}
+.content-block img {
+    max-width: 100%;
+    border: 1px solid #c8c8c8;
+    padding: 50px 96px 50px 80px;
+    margin-bottom: 42px;
+}
+.content-block p{
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-bottom: 40px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 965px;
+    height: 40px;
+    clear:both;
+    background-color: #c8c8c8;
+    
+}
+.footer-menu ul {
+    font-display: flex;
+    align-items: center;
+}
+
+
+.footer-menu li {
+    list-style-type: none;
+    float: left;
+}
+.footer-menu a {
+    text-decoration: none; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    padding: 25px 25px;
+    color: #2c2c2c;
+    font-size: 13px;
+    line-height: 29px;
+}
+ p{
+    
+    display: block;
+    font-size: 13px;
+    line-height: 29px;
+    color: #2c2c2c;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 30px;
+}

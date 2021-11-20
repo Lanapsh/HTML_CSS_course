@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson #2</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Noto+Sans+Mono:wght@100&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .conteiner {
+            background-color: aqua;
+            border: 1px solid navy;
+            width: 1000px;
+            text-align: center;
+            margin: 0 auto;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Noto Sans Mono', monospace;
+
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .style_dive {
+            width: 100px;
+            height: 100px;
+            margin: 7px 7px 0px 0;
+            background-size: 100%;
+            float: left;
+            background-size: 100%;
+        }
+
+        .content-squid {
+            /* width: 100px;
+            height: 100px;
+            margin: 7px 7px 0px 0; */
+            background-image: url(./images/squid.webp);
+            /* background-size: 100%;
+            float: left; */
+
+        }
+
+        .content-squid img {
+            background-size: 100%;
+        }
+
+        .content-see {
+            /* width: 100px;
+            height: 100px;
+            margin: 7px 7px 0px 0; */
+            background-image: url(./images/see.jpg);
+            /* background-size: 100%;
+            float: left; */
+
+        }
+
+        .content-see img {
+            background-size: 100%;
+        }
+
+        .content-fauda {
+            /* width: 100px;
+            height: 100px;
+            margin: 0px 7px 7px 0; */
+            /* background-image: url(./images/see.jpg); */
+            background-image: url(./images/Fauda.jpeg);
+            /* background-size: 100%;
+            float: left; */
+        }
+
+        .content-fauda img {
+            background-size: 100%;
+        }
+
+        .movie-list p {
+            /* font-family: sans-serif; */
+            font-size: 13px;
+        }
+    </style>
+</head>
+<!-- ДОМАШНЕЕ ЗАДАНИЕ:
+Обновить страничку из первого дз по следующим пунктам:
+ - создать стурктуру проекта (отдельную папку для картинок, стилей и шрифтов если нужно)
+- подключить внешний шрифт
+- добавить бэкграунд к страничке (может быть просто цвет или картинка – тут уж на ваше
+усмотрение)
+- выровнять основной контент по середине с максимальной шириной блока в 1000px;
+- использовать следующие стили для оформления странички: border; color; font-size; font-style;
+font-weight;
+- добавить список любимых фильмов с постерами и описанием(4 фильма будет достаточно), при
+этом один постер реализовать через background-image; Также описание фильма должно иметь
+шрифт который вы подключили
+- также можете поиграться со стилями и добавить что-то свое – это только приветсвуется 
+- готовую домашнуюю работу необходимо закинуть на гитхаб -->
+
+<body>
+
+    <div class="conteiner">
+        <h1>Kyle Farguson</h1>
+        <img src="./images/man-photo.jpg" alt="" height="150">
+        <hr>
+        <h3>Why i choise frontend</h3>
+        <ul>
+            <li>Ineresting</li>
+            <li>Prospectively</li>
+            <li>Ability to work from anywhere in the world</li>
+        </ul>
+        <hr>
+        <h3> Personal information:</h3>
+        <span>Love to ski and eat icecreame</span>
+        <a href="https://www.facebook.com/home.php">Facebook.com</a>
+        <hr>
+        <h3> Faivorit movie:</h3>
+        <div class="movie-list">
+            <ol>
+                <li>
+                    <a href="#"> "Squid Game"</a>
+                    <div class="content-squid style_dive">
+                    </div>
+                    <p>South Korean Internet service provider SK Broadband has sued Netflix to pay for costs from
+                        increased network traffic and maintenance work because of a surge of viewers to the US firm’s
+                        content, an SK spokesperson said on Friday. The move comes after a Seoul court said Netflix
+                        should “reasonably" give something in return to the internet service provider for network usage,
+                        and multiple South Korean lawmakers have spoken out against content providers who do not pay for
+                        network usage despite generating explosive traffic.</p>
+                </li>
+                <li>
+                    <a href="#">"SEE"</a>
+                    <div class="content-see style_dive">
+
+                    </div> 
+                    
+                     <p>See is an American science fiction drama television series produced for Apple TV+ starring Jason
+                        Momoa and Alfre Woodard in leading roles. It is written by Steven Knight and directed by Francis
+                        Lawrence. It also stars Sylvia Hoeks, Hera Hilmar and Christian Camargo. Executive producers
+                        include Knight, Lawrence, Peter Chernin, Jenno Topping, and Kristen Campo. </p>
+                </li>
+
+                <li>
+                    <a href="#">"Fauda"</a>
+                    <div class="content-fauda style_dive">
+                    </div>
+                    <p>
+                        Fauda (Hebrew: פאודה‎, from Arabic: فوضى‎ fawḍā, meaning "chaos") is an Israeli television series
+                        developed by Lior Raz and Avi Issacharoff drawing on their experiences in the Israel Defense
+                        Forces. The series premiered on February 15, 2015. It tells the story of Doron, a commander in
+                        the Mista'arvim unit and his team; in the first season, they pursue a Hamas arch-terrorist known
+                        as "The Panther". </p>
+                </li>
+            </ol>
+        </div>
+
+        <hr>
+        <h3>What I expect from this course:</h3>
+        <span>I want to become a cool front-end and create cool websites</span>
+    </div>
+
+</body>
+
+</html>

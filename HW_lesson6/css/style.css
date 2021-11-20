@@ -1,0 +1,95 @@
+.wraper {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid  rgb(156, 245, 156);  
+}
+.header {
+    background-color: rgb(156, 245, 156);
+    padding: 15px;
+    
+}
+.header select{
+    border-width: 0;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.logo{
+    text-decoration: none;
+}
+
+.left-side{
+    width: 40%;    
+}
+
+.right-side{
+    width: 50%;
+    /* display: flex;       */
+}
+
+.form-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-item:last-child{
+    margin-bottom: 0px;
+}
+
+.required::after {
+    content: '*';
+    color: red;
+}
+
+.form-item input, .form-item textarea{
+    width: 200px;
+}
+/* .form-item-url {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+} */
+.form-item-url input {
+    
+    margin-bottom: 5px;
+    width: 130px;
+
+}
+.right-side-part1 {
+    display: flex;
+    margin-bottom: 40px;
+    
+}
+
+.form-item-radio-box {
+    margin-left: 30px;
+}
+.form-item-radio {
+    display: flex;
+    
+}
+.comment-spase {
+   display: flex;
+   justify-content: space-between;
+}
+.footer {
+    background-color: rgb(204, 206, 204);
+    padding: 15px; 
+    display: flex;
+    justify-content: center;
+}
+
+.footer-button input{
+    background: rgb(86, 131, 86);
+    border: 1px solid rgb(40, 121, 40);
+    color: white;
+    width: 90px;
+    height: 35px;
+    
+}
+.footer-button:first-child {
+    margin-right: 5px;
+}

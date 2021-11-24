@@ -1,0 +1,18 @@
+.main-table{
+    background-image: url('../img/Mersedes.jpeg'); 
+    border: 1px solid black;
+    background-size: cover;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.has-table {
+    background: blue;
+}
+
+.green-bg {
+    background: green;
+}

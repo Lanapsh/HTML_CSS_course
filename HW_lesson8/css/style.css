@@ -23,14 +23,21 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 97px;
 }
 .header .header__nav-list li {
   margin-right: 38px;
+}
+.header .header__nav-list li:hover {
+  color: #4F56F1;
 }
 .header .header__nav-list a {
   text-decoration: none;
 }
 .header .header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 720px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -38,7 +45,7 @@
   text-align: center;
   letter-spacing: 0.02em;
 }
-.header .header__btn .header__btn-1 {
+.header .header__btn .header__btn-in {
   width: 120px;
   height: 60px;
   background-color: #FFF;
@@ -46,8 +53,9 @@
   color: #1B0A42;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
 }
-.header .header__btn .header__btn-2 {
+.header .header__btn .header__btn-up {
   width: 120px;
   height: 60px;
   color: #fff;
@@ -56,17 +64,25 @@
   border-radius: 6px;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .main {
+  width: 1300px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  padding-top: 100px;
 }
 .main .main__content {
-  margin: 208px 158px auto 200px;
+  padding-top: 40px;
 }
 .main .main__content h1 {
   display: block;
@@ -93,7 +109,8 @@
   font-size: 16px;
   line-height: 32px;
   margin-top: 50px;
+  cursor: pointer;
 }
 .main .main__banner-img {
-  padding: 96px 94px;
+  padding-left: 115px;
 }

@@ -34,7 +34,7 @@
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
-    background-color: #F0650D;
+    background-color: #4B5A65;
 }
 .header__btn-grey {
     padding: 7px 25px;
@@ -44,6 +44,9 @@
     color: #FFFFFF;
     text-decoration: none;
     background-color: #4B5A65;
+}
+.button:hover {
+    background-color: #F0650D;
 }
 .main {
     display: grid;
@@ -62,38 +65,38 @@
     position: relative;
     cursor: pointer;
 }
-.main__item-1 {
+.main__item-gzglasses {
     grid-column: 1 / 3;
     background-image: url(../img/1-1.png);
 
 }
-.main__item-5 {
+.main__item-glasses {
     grid-column: 2 / 4;
     background-image: url(../img/5-1.png);
 }
-.main__item-9 {
+.main__item-vrhacking {
     grid-row: 2 / 4;
     grid-column-start: 4;
     padding: 200px;
     background-image: url(../img/6-1.png);
     background-repeat: no-repeat;
 }
-.main__item-2 {
+.main__item-macbook {
     background-image: url(../img/2-1.png);
 }
-.main__item-3 {
+.main__item-imac {
     background-image: url(../img/3-1.png);
 }
-.main__item-4 {
+.main__item-hacking {
     background-image: url(../img/4-1.png);
 }
-.main__item-6 {
+.main__item-notebook {
     background-image: url(../img/9-1.png);
 }
-.main__item-7 {
+.main__item-code {
     background-image: url(../img/8-1.png);
 }
-.main__item-8 {
+.main__item-timer {
     background-image: url(../img/7-1.png);
 }
 .main div::after{
@@ -106,7 +109,7 @@
     top: 0;
     left: 0;
     background-color: rgba(50, 65, 75, 0.6);
-    color: rgba(238, 100, 13, 1)
+    color: rgba(238, 100, 13, 1);
 }
 .main div:hover::after{
     background-color: rgba(50, 65, 75, 0.8);

@@ -50,6 +50,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: #0066CC;
+  cursor: pointer;
 }
 .button a {
   text-align: center;
@@ -107,12 +108,18 @@ body {
   width: 1280px;
   height: 56px;
   border: 1px solid #EDF1F3;
+  display: flex;
+  
 }
 .breadcrumbs {
   display: flex;
+  align-items: center;
+}
+.breadcrumbs__home {
+  margin-left: 72px;
 }
 .breadcrumbs li {
-  margin: 20 px;
+  margin: 16px;
   list-style: none;
 }
 .breadcrumbs li:after {
@@ -131,7 +138,11 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.64);
+}
+.breadcrumbs a:hover {
   color: #0066CC;
+  
 }
 .main {
   min-height: 100%;
@@ -169,7 +180,8 @@ body {
   top: 64px;
 }
 .footer {
-  display: flex;
+  
+  color: rgba(0, 0, 0, 0.64);;
 }
 .footer-top {
   background-color: #F1F1F1;
@@ -179,41 +191,81 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  
 }
 .footer-section {
   margin-right: 16px;
 }
-.footer-section li .line img{
+.footer-section li {
   width: 272px;
+  margin-top: 16px;
 }
-.footer-section li .line::after{
-  content: '';    
-  width: 80px;
+.outer {
+  width: 272px;
   height: 2px;
-  position: absolute;
-  background-image: url('../image/line1.png');
+  background: rgba(0, 0, 0, 0.08);
+  margin-top: 15px;
 }
+.inner {
+  width: 30%;
+  height: 100%;
+  background: #006BE8;
+}
+
+
 .footer-section h3 {
   width: 272px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.64);
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
 }
-.footer-section a{
+.footer-section a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.64);
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   margin-top: 16px;
+  cursor: pointer;
+}
+.footer-section a:hover {
+  color:#006BE8;
 }
 .footer-section li p {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.64);
+}
+.footer-bottom {
+  display: flex;
+  margin-left: -14px;
+  
+  width: 1280px;
+  height: 48px;
+  background: #fff;
+}
+.social-right{
+  margin:16px auto;
+  color: rgba(0, 0, 0, 0.48);
+}
+.social-icon{
+  display: flex;
+  float: right;
+  margin-right: 60px;
+  margin-top: 16px;
+}
+.social-icon a{
+  width: 16px;
+  height: 16px;
+}
+.social-icon a:last-child{
+  margin-left: 9px;
+}
+.social-icon a:nth-child(2){
+  margin-left: 9px;
 }
 
 

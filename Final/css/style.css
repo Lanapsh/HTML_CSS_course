@@ -220,10 +220,7 @@ ul {
     margin-top: 50px;
     
 }
-/* .main {
-    width:1600px ;
-    margin: 0 auto;
-} */
+
 .main__box {
     display: flex;
     align-items: center;
@@ -250,8 +247,10 @@ ul {
     margin-left: 0;
 }
 .block__card {
-    max-width: 300px;
+    max-width: 400px;
+    
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     border-bottom: 1px solid rgba(69, 88, 128, 0.2);
     margin-top: 112px;
@@ -259,15 +258,15 @@ ul {
 .main__img {
     margin-right: 135px;
 }
-.icon-1 {
+.icon-one {
     background: url(../image/Icon1.png) no-repeat left;
     padding-left: 90px;
 }
-.icon-2 {
+.icon-two {
     background: url(../image/Icon2.png) no-repeat left;
     padding-left: 90px;
 }
-.icon-3 {
+.icon-three {
     background: url(../image/Icon3.png)no-repeat left ;
     padding-left: 90px;
 }
@@ -421,4 +420,86 @@ ul {
     font-size: 16px;
     text-align: right;
     color: #DFE0EB;
+}
+.footer__block {
+    display: flex;
+    margin-top: 124px;
+    margin-left: 204px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.desc__footer {
+    max-width: 310px;
+}
+.desc__footer-text {
+    margin-top: 32px;
+    
+    font-size: 18px;
+    color: #455880;
+}
+.pages .demons .resourses {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+} 
+.resourses {
+    margin-right: 212px;
+}
+.tittles {
+    margin-bottom: 22px;
+    font-size: 22px;
+    color: #1E266D;
+}
+.pages__link li{
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #455880;
+}
+.social__links {
+    justify-content: space-between;
+    
+}
+.social__links a {
+    margin-right: 24px;
+}
+.resourses__link {
+    margin-top: 25px;
+}
+.resourses__link li {
+    margin-bottom: 20px;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 77px;
+    background: rgba(135, 146, 161, 0.08);
+    width: 1184px;
+    min-height: 2px;
+}
+.info__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 130px;
+    margin-bottom: 107px;
+   
+}
+.info__tittle {
+    font-size: 14px;
+    color: rgba(69, 88, 128, 0.5);
+    margin-left: 204px;
+}
+.info__text {
+    text-decoration: none;
+    font-size: 14px;
+    color: #455880;
+    margin-right: 212px;
+}
+.info__text:not(:last-child) {
+    margin-right: 20px;
 }

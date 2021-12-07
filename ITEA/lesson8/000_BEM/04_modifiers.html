@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM modifiers</title>
+    <!-- 
+        Когда у вас есть разные стили в блоках (или элементах), там появляются модификаторы. Это сущность, определяющая внешний вид, состояние или поведение блока либо элемента. 
+        Название модификатора характеризует внешний вид («какой размер?», «какая тема?» и т. п. — «размер»: size_s, «тема»: theme_islands), состояние («чем отличается от прочих?» — «отключен»: disabled, «фокусированный»: focused) и поведение («как ведет себя?», «как взаимодействует с пользователем?» — «направление»: directions_left-top).
+        Модификаторы имеют уникальное соглашение по именованию CSS, которое работает следующим образом:
+            block--modifier или block__element--modifier.
+            Модификаторы BEM могут применяться как к блокам, так и к элементам.
+     -->
+    <style>
+        /* не по БЕМ */
+        .some-card--gold {
+            display: block;
+            width: 400px;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color: goldenrod;
+        }
+        .some-card__title--large {
+            font-size: 40px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .some-card__description--underline {
+            font-size: 14px;
+            color: #fff;
+            text-decoration: underline;
+        }
+        .some-card__link--red {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: red;
+        }
+
+        /* БЕМ */
+        .card {
+            display: block;
+            width: 400px;
+            padding: 20px;
+            margin-bottom: 100px;
+        }
+        .card--gold {
+            background-color: goldenrod;
+        }
+        .card__title {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .card__title--large {
+            font-size: 40px;
+        }
+        .card__description {
+            font-size: 14px;
+            color: #fff;
+        }
+        .card__description--underline {
+            text-decoration: underline;
+        }
+        .card__link {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+        }
+        .card__link--red {
+            color: red;  
+        }
+    </style>
+</head>
+<body>
+    <!-- не по БЕМ -->
+    <div class="some-card--gold">
+        <h2 class="some-card__title--large">Some title</h2>
+        <p class="some-card__description--underline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, perspiciatis sunt beatae adipisci officia quos deleniti alias quo aliquid. Quaerat error nobis magnam hic odit nihil nulla earum numquam blanditiis!
+        </p>
+        <a class="some-card__link--red" href="https://www.youtube.com/">click me</a>
+    </div>
+    
+    <!-- БЕМ -->
+    <div class="card card--gold">
+        <h2 class="card__title card__title--large">Some title</h2>
+        <p class="card__description card__description--underline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, perspiciatis sunt beatae adipisci officia quos deleniti alias quo aliquid. Quaerat error nobis magnam hic odit nihil nulla earum numquam blanditiis!
+        </p>
+        <a class="card__link card__link--red" href="https://www.youtube.com/">click me</a>
+    </div>
+
+    <!-- 
+        Считается плохой практикой использовать класс-модификатор изолированно (т.е. без класса блока или элемента).
+        Потому, что модификатор предназначен для добавления постепенных изменений стиля в блок.
+        Поэтому всякий раз, когда используется модификатор, убедитесь, что он используется с базовым классом.
+     -->
+</body>
+</html>

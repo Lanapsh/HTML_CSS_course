@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- БЭМ -->
+    <!-- Блок Элемент Модификатор -->
+
+    <div class="page-header"></div>
+    <div class="header__top"></div>
+    <div class="header"></div>
+
+    <!-- Блок__Элемент--Модификатор -->
+    <div class="list__item list__item--active"></div>
+
+    <!-- Блок - это некий независимый компонент, название блока характеризирует смысл "Что это?" -->
+    <!-- Верно -->
+    <div class="logo"></div>
+    <div class="menu"></div>
+
+    <!-- Неверно -->
+    <!-- Отвечает на вопрос "Какой?" -->
+    <div class="big-item"></div>
+    <div class="orange-text"></div>
+
+    <!-- Элемент составная часть блока и указывается после двух нижних подчеркиваний -->
+    <!-- Элемент не может существовать без блока -->
+    <div class="header">
+        <div class="logo"></div>
+        <div class="header__menu"></div>
+        <div class="header__button"></div>
+    </div>
+
+    <form class="search-form" action="">
+        <input class="search-form__input" type="text">
+        <button class="search-form__button"></button>
+    </form>
+
+    <!-- Вложенности -->
+    <div class="about">
+        <div class="about__left">
+            <ul class="about__left-items">
+                <li class="about__left-item">
+                    <a class="about__left-item-link" href="#"></a>
+                </li>
+                <li class="about__left-item"></li>
+            </ul>
+        </div>
+        <div class="about__right">
+        </div>
+    </div>
+
+    <!-- или -->
+    <div class="about">
+        <div class="about__inner">
+            <div class="about__items"></div>
+        </div>
+    </div>
+
+    <!-- Неверно -->
+    <!-- В данном примере дважды используется нижнее подчеркиание -->
+    <div class="about">
+        <div class="about__inner">
+            <div class="about__inner__items"></div>
+        </div>
+    </div>
+
+
+    <!-- Модификатор -->
+    <!-- Это что-то что определяет внешний вид, размер и т.д. -->
+    <a class="menu__link--active" href=""></a>
+    <a class="menu__link--disabled" href=""></a>
+
+    <!-- Микс -->
+    <!-- Блок + Блок-Элемент -->
+    <div class="search-form header__search-form"></div>
+    <div class="search-form footer__search-form"></div>
+</body>
+</html>
+

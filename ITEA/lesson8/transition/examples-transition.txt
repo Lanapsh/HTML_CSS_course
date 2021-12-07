@@ -1,0 +1,17 @@
+transition
+https://jsfiddle.net/8L6m1bp5/3/
+
+transition 2 params
+https://jsfiddle.net/8L6m1bp5/4/
+
+transitions-timing-functions
+https://jsfiddle.net/8L6m1bp5/2/
+
+delay transition
+https://jsfiddle.net/8L6m1bp5/5/
+
+Transition + Transform
+https://jsfiddle.net/8L6m1bp5/6/
+
+transition + all params in transition
+https://jsfiddle.net/8L6m1bp5/7/

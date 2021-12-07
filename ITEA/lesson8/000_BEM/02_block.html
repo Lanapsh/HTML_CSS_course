@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM blocks</title>
+    <!-- 
+        Блоки являются повторно используемыми компонентами. 
+        Когда вы называете свои блоки, сосредоточьтесь на описании их цели (то есть, что это такое), а не ее состояния (то есть как это выглядит).
+        Название блока характеризует смысл («что это?» — «меню»: menu, «кнопка»: button), а не состояние («какой, как выглядит?» — «красный»: red, «большой»: big). 
+     -->
+
+     <style>
+         /* не по БЕМ */
+        .large-red-box {
+            width: 800px;
+            background: palegreen;
+            padding: 20px;
+            border: 1px solid green;
+            margin-bottom: 100px;
+        }
+
+        /* БЕМ */
+        .card {
+            width: 800px;
+            background: palegreen;
+            padding: 20px;
+            border: 1px solid green;
+            margin-bottom: 100px;
+        }
+     </style>
+</head>
+
+<body>
+    <!-- не по БЕМ -->
+    <div class="large-red-box">
+        <h2>Some title goes here</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, ipsam repellendus autem ipsum eligendi fuga facere, provident reprehenderit suscipit dolores id sunt, repellat dolorem minus illum hic consequatur! Perferendis, illum!
+        </p>
+        <a hred="https://www.youtube.com/">click me</a>
+   </div>
+
+   <!-- БЕМ -->
+    <div class="card">
+        <h2>Some title goes here</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, ipsam repellendus autem ipsum eligendi fuga facere, provident reprehenderit suscipit dolores id sunt, repellat dolorem minus illum hic consequatur! Perferendis, illum!
+        </p>
+        <a hred="https://www.youtube.com/">click me</a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM elements</title>
+    <!-- 
+        Элементы - составная часть блока. Элементы зависят от их родительского блока и поэтому не могут использоваться без них. 
+        Название элемента характеризует смысл («что это?» — «пункт»: item, «текст»: text), а не состояние («какой, как выглядит?» — «красный»: red, «большой»: big). 
+        Они также имеют уникальное соглашение об именах классов CSS, которое работает следующим образом:
+        .block__element
+        Например, при использовании .card компонента, элемент внутри (например, изображение) будет иметь имя класса, например .card__img.
+        К имени элемента всегда добавляется имя блока, разделенное двойным подчеркиванием __.
+     -->
+
+     <style>
+         /* не по БЕМ */
+        .some-card {
+            width: 400px;   
+            background-color: honeydew;  
+            margin-bottom: 100px;
+            padding: 20px;     
+        }
+        .some-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .some-card h2 {
+            color: blueviolet;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        .some-card p {
+            font-size: 14px;
+            color: black;
+            text-transform: lowercase;
+        }
+        .some-card a {
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+            background-color: lightsalmon;
+        }
+
+        /* БЕМ */
+        .card {
+            width: 400px;
+            background-color: honeydew;
+            margin-bottom: 100px;  
+            padding: 20px;          
+        }
+        .card__img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .card__title {
+            color: blueviolet;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        .card__description {
+            font-size: 14px;
+            color: black;
+            text-transform: lowercase;
+        }
+        .card__link {
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+            background-color: lightsalmon;
+        }
+     </style>
+</head>
+<body>
+    <!-- не по БЕМ -->
+    <div class="some-card">
+        <img src="https://hetisdemerckx.be/wp-content/uploads/2020/03/Quokka-cover-1080x608.jpg">
+        <h2>Some title</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quod aliquid cum odio cumque dolore, magnam eveniet modi deleniti praesentium a architecto amet ullam quis facilis animi corrupti tempora reiciendis!
+        </p>
+        <a href="https://www.youtube.com/">click me</a>
+    </div>
+
+    <!-- БЕМ -->
+    <div class="card">
+        <img class="card__img" src="https://hetisdemerckx.be/wp-content/uploads/2020/03/Quokka-cover-1080x608.jpg">
+        <h2 class="card__title" >Some title</h2>
+        <p class="card__description" >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque quod quasi non aperiam, dolores id sapiente deleniti nihil nemo recusandae adipisci, unde dolore, quidem sed esse dolor porro tempora.
+        </p>
+        <a class="card__link" href="https://www.youtube.com/">click me</a>
+    </div>
+
+    <!-- 
+        Важно отметить, что второй фрагмент кода избегает использования более 1 селектора для выбора стилей (например, например .card img {}).
+        Рекомендуется использовать класс элементов BEM и использовать его непосредственно (например .card__img {}) - это снижает вероятность возникновения каскадных проблем в будущем.
+     -->
+    
+</body>
+</html>

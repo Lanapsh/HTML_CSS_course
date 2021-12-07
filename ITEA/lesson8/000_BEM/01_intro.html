@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <style>
+        /* 
+            https://ru.bem.info/methodology/
+            BEM (Block-Element-Modifier) - компонентный подход к веб-разработке.
+            В его основе лежит принцип разделения интерфейса на независимые блоки. 
+            Он позволяет легко и быстро разрабатывать интерфейсы любой сложности, называя классы CSS в следующей методологии: 
+        */
+            
+        
+        /* Блок: независимый компонент, который можно использовать повторно (например, с именем класса */
+        .card {
+            display: block;
+            padding: 20px;            
+        }
+
+        /* Элемент: дочерний элемент в блоке, который нельзя использовать отдельно от этого блока */ 
+        .card__img {
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Модификатор: изменение стиля блока или модификатора */
+        .card--dark {
+            background-color: dimgray;
+        } 
+        .card__img--large {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://hetisdemerckx.be/wp-content/uploads/2020/03/Quokka-cover-1080x608.jpg" alt="some image" class="card__img">
+    </div>
+
+    <div class="card card--dark">
+        <img src="https://hetisdemerckx.be/wp-content/uploads/2020/03/Quokka-cover-1080x608.jpg" alt="" class="card__img card__img--large">
+    </div>
+
+</body>
+</html>

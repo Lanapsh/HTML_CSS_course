@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;ECDL,qBAAqB,EDEE,IAAI;ECDxB,kBAAkB,EDCE,IAAI;ECAvB,iBAAiB,EDAE,IAAI;ECCnB,aAAa,EDDE,IAAI;EAC3B,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,GAAG;CAClB",
+    "sources": [
+        "style.scss",
+        "_border-radius.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

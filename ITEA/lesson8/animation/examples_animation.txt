@@ -1,0 +1,34 @@
+keyframes
+https://jsfiddle.net/gb2zmpoc/
+
+keyframes animation-duration
+https://jsfiddle.net/gb2zmpoc/5/
+
+keyframes delay
+https://jsfiddle.net/gb2zmpoc/6/
+
+keyframes animation-iteration-count
+https://jsfiddle.net/g1s7huof/3/
+
+keyframes infinite animation
+https://jsfiddle.net/g1s7huof/4/
+
+keyframes animation-direction
+https://jsfiddle.net/g1s7huof/8/
+
+keyframes animation-timing-function
+https://jsfiddle.net/g1s7huof/9/
+
+keyframes shorthand
+https://jsfiddle.net/g1s7huof/10/
+
+
+
+
+
+
+
+
+
+
+

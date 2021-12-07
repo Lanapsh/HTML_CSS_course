@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Элемент <header> представляет заголовок документа или раздела. Заголовок должен содержать заголовок и информацию о соответствующем содержании. В следующей таблице приведены контекст использования и история версий этого тега.
+        Совет: не путайте элемент <header> (который является видимым разделом страницы) с элементом <head> (который содержит метаданные, не показываемые пользователю).
+        Примечание. Элемент <header> можно разместить где угодно внутри <body>, но его нельзя размещать внутри <address>, <footer> или другого элемента <header>.
+     -->
+    <header>
+        <h1>Tutorial Republic</h1>
+        <nav>
+            <p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a></p>
+        </nav>
+    </header>
+
+
+    <!-- 
+        Элемент <main> представляет основное или доминирующее содержимое <body> документа.
+        Совет: содержимое элемента <main> должно быть уникальным для документа. Контент, который повторяется в документах, такой как боковые панели, навигационные ссылки, информация об авторских правах, логотипы сайтов и формы поиска (если это не основная функция страницы), не следует включать
+        Примечание. В документе не должно быть более одного элемента <main>. Кроме того, элемент <main> не должен быть потомком элементов <article>, <aside>, <footer>, <header> или <nav>.
+     -->
+     <main>
+        <h1>Core Web Technologies</h1>
+        <p>HTML and CSS are two of the core technologies for building web pages.</p>
+        <article>
+            <h2>What is HTML?</h2>
+            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages.</p>
+        </article>
+        <article>
+            <h2>What is CSS?</h2>
+            <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for HTML elements such as colors, backgrounds, fonts etc.</p>
+        </article>
+    </main>
+
+
+    <!-- 
+        Элемент <footer> представляет нижний колонтитул документа или раздела. Нижний колонтитул обычно содержит информацию об авторе документа, информацию об авторских правах, ссылки на связанные документы и т.д
+        Примечание. Элемент <footer> можно разместить где угодно внутри <body>, но его нельзя размещать внутри <address>, <header> или другого элемента <footer>.
+     -->
+     <footer>
+        <nav>
+            <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </nav>
+        <p>Copyright © 2014 Tutorial Republic</p>
+    </footer>
+
+
+    <!-- 
+        Элемент <nav> определяет раздел навигационных ссылок (т. Е. Ссылок на другие страницы или на части внутри самой страницы) в документе.
+        Совет: нет необходимости размещать все ссылки в элементе <nav>. Он предназначен для основного блока навигационных ссылок. Элемент <nav> обычно заменяет <div class = "nav">, часто используемую в HTML.    
+     -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- 
+        Элемент <aside> представляет собой раздел веб-страницы, содержащий контент, косвенно связанный с контентом вокруг него.
+     -->
+    <aside>
+        <h1>Apollo 13 Facts</h1>
+        <p>Apollo 13 was the seventh manned mission in the American Apollo space program and the third intended to land on the Moon.</p>
+    </aside>
+
+
+    <!-- 
+        Элемент <article> представляет собой раздел содержимого, который образует независимую часть документа, например сообщение в блоге, статью или другую автономную единицу информации, которая может быть связана с другим телом содержимого или включена в него.        
+     -->
+    <article>
+        <h1>Introduction to HTML</h1>
+        <p>HTML is a markup language that is used for creating web pages.</p>
+    </article>
+
+    <!-- 
+        Элемент <section> определяет раздел документа, такой как верхний колонтитул, нижний колонтитул и т. Д. 
+    -->
+    <section>
+        <h1>Welcome to Our Website</h1>
+        <p>Welcome and thank you for taking the time to visit our website.</p>
+    </section>
+
+    <!-- 
+        Тег <address> определяет контактную информацию автора. Этот элемент используется для разметки контактных данных автора или владельца документа, чтобы читатель мог использовать эти данные для связи с владельцем документа. Элемент <address> часто появляется в начале или в конце документа.
+        Примечание. Хотя текстовое содержимое элемента <address> обычно отображается с тем же стилем по умолчанию, что и <i> или <em>, его более целесообразно использовать при работе с контактной информацией, поскольку он передает дополнительную семантическую информацию.
+     -->
+     <footer>
+        <address>
+            <p><a href="https://www.w3.org/Consortium/contact-mit">MIT</a></p>
+        </address>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+rotateX
+https://jsfiddle.net/9b8rhafw/
+
+rotateY
+https://jsfiddle.net/9b8rhafw/1/
+
+rotateZ
+https://jsfiddle.net/9b8rhafw/2/
